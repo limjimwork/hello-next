@@ -2,7 +2,7 @@
   "name": "hello-next",
   "version": "1.0.0",
   "description": "tutorial next js",
-  "repository": "https://github.com",
+  "repository": "https://github.com/Limsimpson/hello-next.git",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -19,5 +19,11 @@
     "react-dom": "^16.13.0",
     "react-markdown": "^4.3.1",
     "swr": "^0.1.18"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.2",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "typescript": "^3.8.3"
   }
 }

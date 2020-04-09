@@ -4,18 +4,20 @@ const linkStyle = {
   marginRight: 15
 };
 
+const menus = [
+  { url: "/", name: "Home" },
+  { url: "/quotes", name: "Quotes" },
+  { url: "/batman", name: "Batman" }
+];
+
 const Header = () => (
-  <div>
-    <Link href="/">
-      <a style={linkStyle}>Home</a>
-    </Link>
-    <Link href="/quotes">
-      <a style={linkStyle}>Quotes</a>
-    </Link>
-    <Link href="/batman">
-      <a style={linkStyle}>Batman</a>
-    </Link>
-  </div>
+  <header>
+    {menus.map((menu, idx) => (
+      <Link href={menu.url} key={idx}>
+        <a style={linkStyle}>{menu.name}</a>
+      </Link>
+    ))}
+  </header>
 );
 
 export default Header;
